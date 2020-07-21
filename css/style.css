@@ -1,11 +1,74 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 14px; }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
   font-weight: 400; }
+
+header {
+  background-color: #000;
+  color: #fff; }
+  header .header-block {
+    display: flex;
+    width: 95%;
+    padding: 1rem 0; }
+    header .header-block .logo {
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      header .header-block .logo .logo2 {
+        padding-top: 2.2rem; }
+    header .header-block .Mynavbar {
+      margin-left: auto; }
+      header .header-block .Mynavbar .top-navbar-block .top-navbar {
+        display: flex;
+        justify-content: flex-end; }
+        header .header-block .Mynavbar .top-navbar-block .top-navbar ul {
+          flex-direction: row; }
+        header .header-block .Mynavbar .top-navbar-block .top-navbar .top-navbar-item:hover a {
+          color: #00adef !important; }
+        @media only screen and (max-width: 768px) {
+          header .header-block .Mynavbar .top-navbar-block .top-navbar .top-navbar-item .mobile-hidden {
+            display: none; } }
+
+.li-white {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 1.15rem !important;
+  font-weight: 400; }
+  .li-white:first-child span {
+    font-size: 1.15rem; }
+  .li-white:first-child .icon {
+    text-align: center;
+    padding-right: 1rem; }
+    .li-white:first-child .icon i {
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      border: 1px solid white; }
+
+.myNav-item {
+  padding: 0 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center; }
+  .myNav-item:hover a {
+    color: #00adef !important; }
+  .myNav-item:last-child {
+    align-self: center; }
+
+.navbar-mobile-button {
+  justify-content: flex-end; }
+
+.mobile-search {
+  display: none; }
+  @media only screen and (max-width: 1200px) {
+    .mobile-search {
+      display: inline-block;
+      padding-right: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

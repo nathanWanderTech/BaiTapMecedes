@@ -1,0 +1,84 @@
+header {
+  background-color: $black;
+  color: $white;
+  .header-block {
+    display: flex;
+    width: 95%;
+    padding: 1rem 0;
+    .logo {
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo2 {
+        padding-top: 2.2rem;
+      }
+    }
+    .Mynavbar {
+      margin-left: auto;
+
+      .top-navbar-block {
+        .top-navbar {
+          display: flex;
+          justify-content: flex-end;
+          ul {
+            flex-direction: row;
+          }
+          .top-navbar-item {
+            @include hover-2-blue;
+            @include Responsive(MD) {
+              .mobile-hidden {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.li-white {
+  color: $white !important;
+  text-decoration: none;
+  font-size: $medium-size !important;
+  font-weight: 400;
+  &:first-child {
+    span {
+      font-size: $medium-size;
+    }
+    .icon {
+      text-align: center;
+      padding-right: 1rem;
+      i {
+        height: 1.5rem;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+.myNav-item {
+  padding: 0 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  @include hover-2-blue;
+  &:last-child {
+    align-self: center;
+  }
+}
+
+.navbar-mobile-button {
+  justify-content: flex-end;
+}
+
+.mobile-search {
+  display: none;
+  @include Responsive(XL) {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}

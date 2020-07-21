@@ -2,10 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: $fontsize;
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: $small-size;
   font-weight: $font-weigth;
 }
