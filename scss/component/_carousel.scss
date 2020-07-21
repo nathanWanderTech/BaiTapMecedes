@@ -1,0 +1,32 @@
+.myCarousel {
+  .myCarousel-inner {
+    .myCarousel-item {
+      position: relative;
+      .myCarousel-item__content {
+        position: absolute;
+        left: 10%;
+        top: 7%;
+        width: 31%;
+        @include Responsive(MD) {
+          display: none;
+        }
+        .carousel-item__title-dark {
+          color: $text-darkgray;
+          font-size: $large-size;
+        }
+        .carousel-item__title-white {
+          color: $white;
+          font-size: $large-size;
+        }
+        .btn-gray {
+          @include button($bg-gray);
+          margin-top: 3rem;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+}

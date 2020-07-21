@@ -71,4 +71,34 @@ header {
       display: inline-block;
       padding-right: 10px; } }
 
+.myCarousel .myCarousel-inner .myCarousel-item {
+  position: relative; }
+  .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content {
+    position: absolute;
+    left: 10%;
+    top: 7%;
+    width: 31%; }
+    @media only screen and (max-width: 768px) {
+      .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content {
+        display: none; } }
+    .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .carousel-item__title-dark {
+      color: #333;
+      font-size: 2.5rem; }
+    .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .carousel-item__title-white {
+      color: #fff;
+      font-size: 2.5rem; }
+    .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .btn-gray {
+      background-color: #333;
+      color: #ddd;
+      font-size: 1.15rem;
+      font-weight: 500;
+      padding: 10px 35px;
+      letter-spacing: 1px;
+      border-radius: none !important;
+      border: none;
+      margin-top: 3rem;
+      transition: all 0.2s ease-in-out; }
+      .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .btn-gray:hover {
+        background-color: #000; }
+
 /*# sourceMappingURL=style.css.map */

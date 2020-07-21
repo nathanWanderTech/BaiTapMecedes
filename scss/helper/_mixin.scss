@@ -5,6 +5,17 @@
     }
   }
 }
+
+@mixin button($bg-color) {
+  background-color: $bg-color;
+  color: $text-gray;
+  font-size: $medium-size;
+  font-weight: 500;
+  padding: 10px 35px;
+  letter-spacing: 1px;
+  border-radius: none !important;
+  border: none;
+}
 // RESPONSIVE
 $XS: 576px; //Mobile
 $SM: 576px; //iPads,tablets
