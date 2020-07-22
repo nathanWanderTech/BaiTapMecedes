@@ -1,0 +1,55 @@
+.footer {
+  background-color: $black;
+  padding-top: 2.2rem;
+  .language {
+    .deutsch {
+      padding-right: 1rem;
+      border-right: 1px solid $btn-lightBlue;
+      a {
+        text-decoration: none;
+        color: $btn-lightBlue;
+        &:hover {
+          color: $btn-darkBlue;
+        }
+      }
+    }
+    .english {
+      padding-left: 1rem;
+    }
+  }
+  .links-group {
+    display: flex;
+    justify-content: flex-end;
+    @include Responsive(XL) {
+      display: block;
+    }
+
+    .link-list {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      @include Responsive(LG) {
+        justify-content: flex-start !important;
+      }
+
+      li {
+        padding: 0 0.5rem;
+        @include hover-2-blue;
+        a {
+          text-decoration: none;
+          color: $text-darkgray;
+        }
+      }
+    }
+  }
+  .back-to-top {
+    @include hover-2-blue;
+    text-align: right;
+    a {
+      color: $text-darkgray;
+      text-decoration: none;
+      i {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}
