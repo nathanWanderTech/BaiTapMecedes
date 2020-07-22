@@ -46,8 +46,10 @@ header {
         justify-content: flex-end; }
         header .header-block .Mynavbar .top-navbar-block .top-navbar ul {
           flex-direction: row; }
-        header .header-block .Mynavbar .top-navbar-block .top-navbar .top-navbar-item:hover a {
+        header .header-block .Mynavbar .top-navbar-block .top-navbar .top-navbar-item:hover {
           color: #00adef !important; }
+          header .header-block .Mynavbar .top-navbar-block .top-navbar .top-navbar-item:hover a {
+            color: #00adef !important; }
         @media only screen and (max-width: 768px) {
           header .header-block .Mynavbar .top-navbar-block .top-navbar .top-navbar-item .mobile-hidden {
             display: none; } }
@@ -55,10 +57,10 @@ header {
 .li-white {
   color: #fff !important;
   text-decoration: none;
-  font-size: 1.15rem !important;
+  font-size: 1.1rem !important;
   font-weight: 400; }
   .li-white:first-child span {
-    font-size: 1.15rem; }
+    font-size: 1.1rem; }
   .li-white:first-child .icon {
     text-align: center;
     padding-right: 1rem; }
@@ -73,8 +75,10 @@ header {
   font-weight: 400;
   display: flex;
   align-items: center; }
-  .myNav-item:hover a {
+  .myNav-item:hover {
     color: #00adef !important; }
+    .myNav-item:hover a {
+      color: #00adef !important; }
   .myNav-item:last-child {
     align-self: center; }
 
@@ -100,14 +104,14 @@ header {
         display: none; } }
     .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .carousel-item__title-dark {
       color: #333;
-      font-size: 2.5rem; }
+      font-size: 2.3rem; }
     .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .carousel-item__title-white {
       color: #fff;
-      font-size: 2.5rem; }
+      font-size: 2.3rem; }
     .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .btn-gray {
       background-color: #333;
       color: #999;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 500;
       padding: 10px 35px;
       letter-spacing: 1px;
@@ -155,7 +159,7 @@ header {
       margin-top: 5rem;
       color: #fff; }
       .intro .intro-block .intro-content .intro-main .intro-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         letter-spacing: 1px; }
       .intro .intro-block .intro-content .intro-main .intro-body {
         font-size: 1rem;
@@ -169,7 +173,7 @@ header {
       .intro .intro-block .intro-content .intro-main .intro-button {
         background-color: #00adef;
         color: #999;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         font-weight: 500;
         padding: 10px 35px;
         letter-spacing: 1px;
@@ -205,11 +209,13 @@ header {
         .news .news-menu .news-menu-container .news-menu__item a {
           text-decoration: none;
           color: white;
-          font-size: 1.15rem; }
+          font-size: 1.1rem; }
           .news .news-menu .news-menu-container .news-menu__item a i {
             padding-right: 0.9rem; }
-        .news .news-menu .news-menu-container .news-menu__item:hover a {
+        .news .news-menu .news-menu-container .news-menu__item:hover {
           color: #00adef !important; }
+          .news .news-menu .news-menu-container .news-menu__item:hover a {
+            color: #00adef !important; }
         .news .news-menu .news-menu-container .news-menu__item:first-child {
           position: relative; }
           .news .news-menu .news-menu-container .news-menu__item:first-child a {
@@ -233,7 +239,7 @@ header {
   .gallery-button .show-more {
     background-color: #333;
     color: #999;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 500;
     padding: 10px 35px;
     letter-spacing: 1px;
@@ -274,7 +280,9 @@ header {
     .links .shopping .title,
     .links .about .title,
     .links .discover .title {
-      position: relative; }
+      position: relative;
+      font-size: 2.3rem;
+      font-family: MBCorpo Title, DaimlerCAC-Regular; }
       .links .topic .title::after,
       .links .shopping .title::after,
       .links .about .title::after,
@@ -297,10 +305,78 @@ header {
       .links .discover .links-menu li a {
         text-decoration: none;
         color: #999; }
-      .links .topic .links-menu li:hover a,
-      .links .shopping .links-menu li:hover a,
-      .links .about .links-menu li:hover a,
-      .links .discover .links-menu li:hover a {
+      .links .topic .links-menu li:hover,
+      .links .shopping .links-menu li:hover,
+      .links .about .links-menu li:hover,
+      .links .discover .links-menu li:hover {
         color: #00adef !important; }
+        .links .topic .links-menu li:hover a,
+        .links .shopping .links-menu li:hover a,
+        .links .about .links-menu li:hover a,
+        .links .discover .links-menu li:hover a {
+          color: #00adef !important; }
+
+.contact {
+  background: #000;
+  padding-top: 2rem; }
+  .contact .contact-block .contact-header {
+    position: relative;
+    font-size: 2.3rem;
+    font-family: MBCorpo Title, DaimlerCAC-Regular;
+    color: #fff; }
+    .contact .contact-block .contact-header::after {
+      content: "";
+      display: block;
+      height: 1.5px;
+      background-color: #333;
+      position: absolute;
+      width: 100%;
+      margin-top: 2rem; }
+  .contact .contact-block .contact-body {
+    margin-top: 4rem; }
+    .contact .contact-block .contact-body .contact-body__left {
+      color: #999;
+      padding-bottom: 2rem; }
+      .contact .contact-block .contact-body .contact-body__left .email-input {
+        margin-bottom: 1rem; }
+        .contact .contact-block .contact-body .contact-body__left .email-input .email-input__box {
+          padding: 10px 15px;
+          border: none;
+          background-color: #333;
+          width: 60%; }
+          .contact .contact-block .contact-body .contact-body__left .email-input .email-input__box::placeholder {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #fff; }
+          .contact .contact-block .contact-body .contact-body__left .email-input .email-input__box::placeholder {
+            font-style: italic;
+            font-family: MBCorpo Title, DaimlerCAC-Regular;
+            font-weight: lighter; }
+          .contact .contact-block .contact-body .contact-body__left .email-input .email-input__box:focus {
+            outline: none; }
+        .contact .contact-block .contact-body .contact-body__left .email-input .email-submit-btn {
+          color: #999;
+          border: none;
+          height: 41px;
+          margin: 0;
+          margin-left: -3px;
+          padding-left: 1rem;
+          padding-right: 5rem;
+          background: linear-gradient(#242424, #0b0b0b); }
+    .contact .contact-block .contact-body .contact-body__right {
+      color: #999;
+      font-size: 1rem;
+      width: 85%;
+      padding-bottom: 2rem; }
+      .contact .contact-block .contact-body .contact-body__right .social-media {
+        flex-wrap: wrap; }
+        .contact .contact-block .contact-body .contact-body__right .social-media .social-media__item {
+          font-size: 1.1rem;
+          padding: 0px 25px; }
+          .contact .contact-block .contact-body .contact-body__right .social-media .social-media__item:hover {
+            color: #00adef !important; }
+            .contact .contact-block .contact-body .contact-body__right .social-media .social-media__item:hover a {
+              color: #00adef !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+.contact {
+  background: $black;
+  padding-top: 2rem;
+  .contact-block {
+    .contact-header {
+      @include underline(2rem);
+      color: $white;
+    }
+    .contact-body {
+      margin-top: 4rem;
+      .contact-body__left {
+        color: $text-gray;
+        padding-bottom: 2rem;
+        .email-input {
+          margin-bottom: 1rem;
+
+          .email-input__box {
+            @include input-box($white);
+            background-color: $bg-gray;
+            width: 60%;
+            &::placeholder {
+              font-style: italic;
+              font-family: MBCorpo Title, DaimlerCAC-Regular;
+              font-weight: lighter;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          .email-submit-btn {
+            color: $text-gray;
+            border: none;
+            height: 41px;
+            margin: 0;
+            margin-left: -3px;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            background: linear-gradient(#242424, #0b0b0b);
+          }
+        }
+      }
+      .contact-body__right {
+        color: $text-gray;
+        font-size: $small-size;
+        width: 85%;
+        padding-bottom: 2rem;
+        .social-media {
+          flex-wrap: wrap;
+          .social-media__item {
+            font-size: $medium-size;
+            padding: 0px 25px;
+            @include hover-2-blue;
+          }
+        }
+      }
+    }
+  }
+}

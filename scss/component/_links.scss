@@ -8,7 +8,6 @@
     color: $white;
     font-size: $small-size;
     .title {
-      position: relative;
       @include underline(2rem);
     }
     .links-menu {
