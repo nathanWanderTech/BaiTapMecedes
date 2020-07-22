@@ -379,4 +379,26 @@ header {
             .contact .contact-block .contact-body .contact-body__right .social-media .social-media__item:hover a {
               color: #00adef !important; }
 
+.footer-brandhub {
+  background: #000; }
+  .footer-brandhub .footer-brandhub-block hr {
+    margin: 0;
+    background-color: #333; }
+  .footer-brandhub .footer-brandhub-block .footer-brandhub-item {
+    text-align: center;
+    padding: 2rem 0; }
+    .footer-brandhub .footer-brandhub-block .footer-brandhub-item img {
+      height: 2rem; }
+  .footer-brandhub .footer-brandhub-block p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: #999; }
+    .footer-brandhub .footer-brandhub-block p .web-link:hover {
+      color: #00adef !important; }
+      .footer-brandhub .footer-brandhub-block p .web-link:hover a {
+        color: #00adef !important; }
+    .footer-brandhub .footer-brandhub-block p .web-link a {
+      text-decoration: none;
+      color: #fff; }
+
 /*# sourceMappingURL=style.css.map */

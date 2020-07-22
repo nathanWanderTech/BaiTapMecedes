@@ -1,0 +1,28 @@
+.footer-brandhub {
+  background: $black;
+  .footer-brandhub-block {
+    hr {
+      margin: 0;
+      background-color: $text-darkgray;
+    }
+    .footer-brandhub-item {
+      text-align: center;
+      padding: 2rem 0;
+      img {
+        height: 2rem;
+      }
+    }
+    p {
+      margin-top: 2rem;
+      margin-bottom: 0;
+      color: $text-gray;
+      .web-link {
+        @include hover-2-blue;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+}
