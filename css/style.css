@@ -176,4 +176,87 @@ header {
       .brand-hub .brand-hub-block .brand-hub__item-container .brand-hub__item {
         padding: 5px; }
 
+.news {
+  background-color: #000; }
+  .news .news-menu {
+    display: grid;
+    place-items: center; }
+    .news .news-menu .news-menu-container {
+      margin-top: 2rem; }
+      .news .news-menu .news-menu-container .news-menu__item {
+        padding: 0 1.5rem; }
+        .news .news-menu .news-menu-container .news-menu__item a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.15rem; }
+          .news .news-menu .news-menu-container .news-menu__item a i {
+            padding-right: 0.9rem; }
+        .news .news-menu .news-menu-container .news-menu__item:hover a {
+          color: #00adef !important; }
+        .news .news-menu .news-menu-container .news-menu__item:first-child {
+          position: relative; }
+          .news .news-menu .news-menu-container .news-menu__item:first-child a {
+            color: #00adef; }
+          .news .news-menu .news-menu-container .news-menu__item:first-child::after {
+            content: "";
+            display: block;
+            background-color: #00adef;
+            height: 1px;
+            position: absolute;
+            width: 59%;
+            margin-top: 7px; }
+
+.gallery-container {
+  margin-top: 2rem; }
+
+.gallery-button {
+  display: grid;
+  place-items: center;
+  margin-top: 1.5rem; }
+  .gallery-button .show-more {
+    background-color: #333;
+    color: #ddd;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 10px 35px;
+    letter-spacing: 1px;
+    border-radius: none !important;
+    border: none;
+    padding: 2px 22px;
+    letter-spacing: 0;
+    transition: all 0.2s; }
+    .gallery-button .show-more i {
+      padding-right: 3px; }
+    .gallery-button .show-more:hover span {
+      color: white; }
+
+.col-no-pd {
+  padding-left: 0;
+  padding-right: 0; }
+
+@media screen and (min-width: 992px) {
+  .mobile-show {
+    display: none; } }
+
+.desktop-show {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .desktop-show {
+      display: flex; } }
+
+.padding-1 {
+  padding: 1px; }
+
+.tesitmonials {
+  background-color: #000;
+  color: #fff;
+  padding-top: 3rem;
+  font-size: 1rem; }
+  .tesitmonials .testimonials-container .testimonial-head .head__items {
+    flex-wrap: wrap; }
+    .tesitmonials .testimonials-container .testimonial-head .head__items li {
+      padding-right: 15px; }
+      .tesitmonials .testimonials-container .testimonial-head .head__items li span i {
+        padding-right: 3px; }
+
 /*# sourceMappingURL=style.css.map */

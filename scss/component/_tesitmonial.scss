@@ -1,0 +1,21 @@
+.tesitmonials {
+  background-color: $black;
+  color: $white;
+  padding-top: 3rem;
+  font-size: $small-size;
+  .testimonials-container {
+    .testimonial-head {
+      .head__items {
+        flex-wrap: wrap;
+        li {
+          padding-right: 15px;
+          span {
+            i {
+              padding-right: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.news {
+  background-color: $black;
+  .news-menu {
+    display: grid;
+    place-items: center;
+    .news-menu-container {
+      margin-top: 2rem;
+      .news-menu__item {
+        padding: 0 1.5rem;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: $medium-size;
+          i {
+            padding-right: 0.9rem;
+          }
+        }
+        @include hover-2-blue;
+        &:first-child {
+          position: relative;
+          a {
+            color: $btn-lightBlue;
+          }
+          &::after {
+            content: "";
+            display: block;
+            background-color: $btn-lightBlue;
+            height: 1px;
+            position: absolute;
+            width: 59%;
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+.gallery-container {
+  margin-top: 2rem;
+}
+.gallery-button {
+  display: grid;
+  place-items: center;
+  margin-top: 1.5rem;
+  .show-more {
+    @include button($bg-gray);
+    padding: 2px 22px;
+    letter-spacing: 0;
+    transition: all 0.2s;
+    i {
+      padding-right: 3px;
+    }
+    &:hover {
+      span {
+        color: white;
+      }
+    }
+  }
+}
+
+//HELPERs
+.col-no-pd {
+  padding-left: 0;
+  padding-right: 0;
+}
+.mobile-show {
+  @media screen and (min-width: $LG) {
+    display: none;
+  }
+}
+.desktop-show {
+  display: none;
+  @media screen and (min-width: $LG) {
+    display: flex;
+  }
+}
+.padding-1 {
+  padding: 1px;
+}
