@@ -1,0 +1,29 @@
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  @include Responsive(MD) {
+    display: block;
+  }
+  .mobile-bottom-nav-wrapper {
+    background-color: $bg-gray;
+    .mobile-bottom-nav-item {
+      display: grid;
+      place-items: center;
+      border: 1.5px solid black;
+      .item-content {
+        text-align: center;
+        color: white;
+        padding: 0.5rem 0;
+        i {
+          font-size: 1.5rem;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

@@ -441,10 +441,37 @@ header {
       color: #00adef !important; }
       .footer .back-to-top:hover a {
         color: #00adef !important; }
+    @media only screen and (max-width: 768px) {
+      .footer .back-to-top {
+        padding-bottom: 5rem; } }
     .footer .back-to-top a {
       color: #333;
       text-decoration: none; }
       .footer .back-to-top a i {
         padding-left: 0.5rem; }
+
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    .mobile-bottom-nav {
+      display: block; } }
+  .mobile-bottom-nav .mobile-bottom-nav-wrapper {
+    background-color: #333; }
+    .mobile-bottom-nav .mobile-bottom-nav-wrapper .mobile-bottom-nav-item {
+      display: grid;
+      place-items: center;
+      border: 1.5px solid black; }
+      .mobile-bottom-nav .mobile-bottom-nav-wrapper .mobile-bottom-nav-item .item-content {
+        text-align: center;
+        color: white;
+        padding: 0.5rem 0; }
+        .mobile-bottom-nav .mobile-bottom-nav-wrapper .mobile-bottom-nav-item .item-content i {
+          font-size: 1.5rem; }
+        .mobile-bottom-nav .mobile-bottom-nav-wrapper .mobile-bottom-nav-item .item-content p {
+          margin-bottom: 0;
+          font-size: 0.7rem; }
 
 /*# sourceMappingURL=style.css.map */

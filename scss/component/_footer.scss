@@ -44,6 +44,9 @@
   .back-to-top {
     @include hover-2-blue;
     text-align: right;
+    @include Responsive(MD) {
+      padding-bottom: 5rem;
+    }
     a {
       color: $text-darkgray;
       text-decoration: none;
