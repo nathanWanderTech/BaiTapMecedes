@@ -167,4 +167,13 @@ header {
         .intro .intro-block .intro-content .intro-main .intro-button:hover {
           background-color: #0088c6; }
 
+.brand-hub {
+  background-color: #000; }
+  .brand-hub .brand-hub-block {
+    width: 87%; }
+    .brand-hub .brand-hub-block .brand-hub__item-container {
+      grid-row-gap: 5px; }
+      .brand-hub .brand-hub-block .brand-hub__item-container .brand-hub__item {
+        padding: 5px; }
+
 /*# sourceMappingURL=style.css.map */

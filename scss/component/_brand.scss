@@ -1,0 +1,12 @@
+.brand-hub {
+  background-color: $black;
+  .brand-hub-block {
+    width: 87%;
+    .brand-hub__item-container {
+      grid-row-gap: 5px;
+      .brand-hub__item {
+        padding: 5px;
+      }
+    }
+  }
+}
