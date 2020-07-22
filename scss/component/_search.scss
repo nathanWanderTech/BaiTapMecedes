@@ -1,0 +1,33 @@
+.search-bar {
+  background-color: $bg-gray;
+  height: 98px;
+  display: grid;
+  place-items: center;
+  .search-bar-container {
+    width: 80%;
+    background-color: white;
+    .search-input {
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      &::placeholder {
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $text-gray;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    span {
+      background-color: $white;
+      align-self: center;
+      cursor: pointer;
+      i {
+        color: black !important;
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}

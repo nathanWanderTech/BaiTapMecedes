@@ -101,4 +101,31 @@ header {
       .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .btn-gray:hover {
         background-color: #000; }
 
+.search-bar {
+  background-color: #333;
+  height: 98px;
+  display: grid;
+  place-items: center; }
+  .search-bar .search-bar-container {
+    width: 80%;
+    background-color: white; }
+    .search-bar .search-bar-container .search-input {
+      width: 100%;
+      padding: 10px 15px;
+      border: none; }
+      .search-bar .search-bar-container .search-input::placeholder {
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #ddd; }
+      .search-bar .search-bar-container .search-input:focus {
+        outline: none; }
+    .search-bar .search-bar-container span {
+      background-color: #fff;
+      align-self: center;
+      cursor: pointer; }
+      .search-bar .search-bar-container span i {
+        color: black !important;
+        font-size: 1.2rem !important; }
+
 /*# sourceMappingURL=style.css.map */
