@@ -107,8 +107,9 @@ header {
   display: grid;
   place-items: center; }
   .search-bar .search-bar-container {
-    width: 80%;
-    background-color: white; }
+    width: 85%;
+    background-color: white;
+    padding: 0; }
     .search-bar .search-bar-container .search-input {
       width: 100%;
       padding: 10px 15px;
@@ -123,9 +124,47 @@ header {
     .search-bar .search-bar-container span {
       background-color: #fff;
       align-self: center;
+      padding-right: 20px;
       cursor: pointer; }
       .search-bar .search-bar-container span i {
         color: black !important;
         font-size: 1.2rem !important; }
+
+.intro {
+  background-color: #000; }
+  .intro .intro-block {
+    width: 87%; }
+    .intro .intro-block .intro-content .intro-main {
+      margin-top: 5rem;
+      color: #fff; }
+      .intro .intro-block .intro-content .intro-main .intro-title {
+        font-size: 2.5rem;
+        letter-spacing: 1px; }
+      .intro .intro-block .intro-content .intro-main .intro-body {
+        font-size: 1rem;
+        margin-top: 1.2rem; }
+        .intro .intro-block .intro-content .intro-main .intro-body span {
+          color: #0088c6; }
+          .intro .intro-block .intro-content .intro-main .intro-body span a {
+            text-decoration: none; }
+            .intro .intro-block .intro-content .intro-main .intro-body span a:hover {
+              color: #0088c6; }
+      .intro .intro-block .intro-content .intro-main .intro-button {
+        background-color: #00adef;
+        color: #ddd;
+        font-size: 1.15rem;
+        font-weight: 500;
+        padding: 10px 35px;
+        letter-spacing: 1px;
+        border-radius: none !important;
+        border: none;
+        margin-top: 1.5rem;
+        color: white;
+        margin-bottom: 2rem; }
+        @media only screen and (max-width: 576px) {
+          .intro .intro-block .intro-content .intro-main .intro-button {
+            width: 100%; } }
+        .intro .intro-block .intro-content .intro-main .intro-button:hover {
+          background-color: #0088c6; }
 
 /*# sourceMappingURL=style.css.map */

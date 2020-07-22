@@ -1,0 +1,41 @@
+.intro {
+  background-color: $black;
+  .intro-block {
+    width: 87%;
+    .intro-content {
+      .intro-main {
+        margin-top: 5rem;
+        color: $white;
+        .intro-title {
+          font-size: $large-size;
+          letter-spacing: 1px;
+        }
+        .intro-body {
+          font-size: $small-size;
+          margin-top: 1.2rem;
+          span {
+            color: $btn-darkBlue;
+            a {
+              text-decoration: none;
+              &:hover {
+                color: $btn-darkBlue;
+              }
+            }
+          }
+        }
+        .intro-button {
+          @include button($btn-lightBlue);
+          margin-top: 1.5rem;
+          color: white;
+          @include Responsive(SM) {
+            width: 100%;
+          }
+          &:hover {
+            background-color: $btn-darkBlue;
+          }
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
