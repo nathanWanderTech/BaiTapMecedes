@@ -8,6 +8,23 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
+.col-no-pd {
+  padding-left: 0;
+  padding-right: 0; }
+
+@media screen and (min-width: 992px) {
+  .mobile-show {
+    display: none; } }
+
+.desktop-show {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .desktop-show {
+      display: flex; } }
+
+.padding-1 {
+  padding: 1px; }
+
 header {
   background-color: #000;
   color: #fff; }
@@ -89,7 +106,7 @@ header {
       font-size: 2.5rem; }
     .myCarousel .myCarousel-inner .myCarousel-item .myCarousel-item__content .btn-gray {
       background-color: #333;
-      color: #ddd;
+      color: #999;
       font-size: 1.15rem;
       font-weight: 500;
       padding: 10px 35px;
@@ -118,7 +135,7 @@ header {
         font-size: 1.3rem;
         font-weight: bold;
         letter-spacing: 1px;
-        color: #ddd; }
+        color: #999; }
       .search-bar .search-bar-container .search-input:focus {
         outline: none; }
     .search-bar .search-bar-container span {
@@ -151,7 +168,7 @@ header {
               color: #0088c6; }
       .intro .intro-block .intro-content .intro-main .intro-button {
         background-color: #00adef;
-        color: #ddd;
+        color: #999;
         font-size: 1.15rem;
         font-weight: 500;
         padding: 10px 35px;
@@ -215,7 +232,7 @@ header {
   margin-top: 1.5rem; }
   .gallery-button .show-more {
     background-color: #333;
-    color: #ddd;
+    color: #999;
     font-size: 1.15rem;
     font-weight: 500;
     padding: 10px 35px;
@@ -230,23 +247,6 @@ header {
     .gallery-button .show-more:hover span {
       color: white; }
 
-.col-no-pd {
-  padding-left: 0;
-  padding-right: 0; }
-
-@media screen and (min-width: 992px) {
-  .mobile-show {
-    display: none; } }
-
-.desktop-show {
-  display: none; }
-  @media screen and (min-width: 992px) {
-    .desktop-show {
-      display: flex; } }
-
-.padding-1 {
-  padding: 1px; }
-
 .tesitmonials {
   background-color: #000;
   color: #fff;
@@ -258,5 +258,49 @@ header {
       padding-right: 15px; }
       .tesitmonials .testimonials-container .testimonial-head .head__items li span i {
         padding-right: 3px; }
+  .tesitmonials .testimonials-container .testimonial-body p {
+    margin-bottom: 0; }
+
+.links {
+  background-color: #000;
+  padding-top: 3rem; }
+  .links .topic,
+  .links .shopping,
+  .links .about,
+  .links .discover {
+    color: #fff;
+    font-size: 1rem; }
+    .links .topic .title,
+    .links .shopping .title,
+    .links .about .title,
+    .links .discover .title {
+      position: relative; }
+      .links .topic .title::after,
+      .links .shopping .title::after,
+      .links .about .title::after,
+      .links .discover .title::after {
+        content: "";
+        display: block;
+        height: 1.5px;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        margin-top: 2rem; }
+    .links .topic .links-menu,
+    .links .shopping .links-menu,
+    .links .about .links-menu,
+    .links .discover .links-menu {
+      margin-top: 4rem; }
+      .links .topic .links-menu li a,
+      .links .shopping .links-menu li a,
+      .links .about .links-menu li a,
+      .links .discover .links-menu li a {
+        text-decoration: none;
+        color: #999; }
+      .links .topic .links-menu li:hover a,
+      .links .shopping .links-menu li:hover a,
+      .links .about .links-menu li:hover a,
+      .links .discover .links-menu li:hover a {
+        color: #00adef !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,3 +9,22 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: $font-weigth;
 }
+//HELPERs , RESET
+.col-no-pd {
+  padding-left: 0;
+  padding-right: 0;
+}
+.mobile-show {
+  @media screen and (min-width: $LG) {
+    display: none;
+  }
+}
+.desktop-show {
+  display: none;
+  @media screen and (min-width: $LG) {
+    display: flex;
+  }
+}
+.padding-1 {
+  padding: 1px;
+}

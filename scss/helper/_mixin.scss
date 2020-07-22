@@ -16,6 +16,18 @@
   border-radius: none !important;
   border: none;
 }
+
+@mixin underline($margin-top) {
+  &::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    background-color: $text-darkgray;
+    position: absolute;
+    width: 100%;
+    margin-top: $margin-top;
+  }
+}
 // RESPONSIVE
 $XS: 576px; //Mobile
 $SM: 576px; //iPads,tablets
