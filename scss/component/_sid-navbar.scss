@@ -1,0 +1,37 @@
+.side-nav {
+  display: grid;
+  place-items: flex-end;
+  position: fixed;
+  top: 45%;
+  right: 0%;
+  @include Responsive(MD) {
+    display: none;
+  }
+  .item-content {
+    display: flex;
+    color: $white;
+    background-color: $bg-gray;
+    align-items: center;
+    width: 15rem;
+    border: 1px solid black;
+    padding: 7px 0;
+    transform: translateX(80%);
+    transition: all 0.5s;
+    &:hover {
+      transform: translateX(0);
+    }
+    p {
+      margin-bottom: 0;
+      i {
+        font-size: $icon-size;
+      }
+    }
+    &:last-child {
+      .side-nav-hidden {
+        i {
+          @include hover-2-blue;
+        }
+      }
+    }
+  }
+}
