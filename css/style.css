@@ -485,7 +485,8 @@ header {
   place-items: flex-end;
   position: fixed;
   top: 45%;
-  right: 0%; }
+  right: 0%;
+  z-index: 999; }
   @media only screen and (max-width: 768px) {
     .side-nav {
       display: none; } }
@@ -495,10 +496,11 @@ header {
     background-color: #333;
     align-items: center;
     width: 15rem;
-    border: 1px solid black;
+    border: 1px solid transparent;
     padding: 7px 0;
     transform: translateX(80%);
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    margin-top: 1.5px; }
     .side-nav .item-content:hover {
       transform: translateX(0); }
     .side-nav .item-content p {

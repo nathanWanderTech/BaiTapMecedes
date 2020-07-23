@@ -4,6 +4,7 @@
   position: fixed;
   top: 45%;
   right: 0%;
+  z-index: 999;
   @include Responsive(MD) {
     display: none;
   }
@@ -13,10 +14,11 @@
     background-color: $bg-gray;
     align-items: center;
     width: 15rem;
-    border: 1px solid black;
+    border: 1px solid transparent;
     padding: 7px 0;
     transform: translateX(80%);
     transition: all 0.5s;
+    margin-top: 1.5px;
     &:hover {
       transform: translateX(0);
     }
